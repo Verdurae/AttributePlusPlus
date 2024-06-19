@@ -1,0 +1,5 @@
+name: AttributePlusPlus
+version: '${version}'
+main: org.verdurae.attributeplusplus.AttributePlusPlus
+depend:
+  - AttributePlus
