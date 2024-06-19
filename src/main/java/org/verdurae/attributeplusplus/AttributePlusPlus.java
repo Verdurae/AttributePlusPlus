@@ -63,7 +63,7 @@ public final class AttributePlusPlus extends JavaPlugin {
                     System.out.println("脚本文件夹为空，跳过");
                 }
             } else {
-                System.out.println("脚本文件夹不存在，跳过");
+                saveResource("script/AAAA.js", false);
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
