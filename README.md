@@ -1,6 +1,15 @@
 ## AttributePlusPlus
 ### 自述
-为AttributePlus提供了更多属性触发器，免费
+为AttributePlus提供了更多属性触发器，免费公开源码和构建以供学习和参考
+### 使用
+如示例文件一样，复制创建多个属性，这些属性文件和AP的属性扩展写法类似  
+每个属性都可以写以下方法，也可以不写，不写则不会触发，没有属性类型的要求
+* runDeath(event)
+  * 生物死亡时执行，实参event为EntityDeathEvent
+  * 示例文件为生物死亡时向生物发送一条消息
+* runKill(event)
+  * 生物击杀一个生物时执行，实参event为EntityDeathEvent
+  * 示例文件中为生物击杀一个生物时，回复2血量（直接回复，没有触发事件，但你也可以自己触发事件）
 ### 开源和许可
 依据[这个页面](https://choosealicense.com/no-permission/)，此项目开源协议为**no-permission**：
 * When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you.
